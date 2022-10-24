@@ -2,11 +2,13 @@
   "name": "ratelimit-fn",
   "version": "1.1.1",
   "description": "Rate limiter for NodeJs. It allows yo to limit the rate of executions of any function in Javascript",
-  "main": "lib/rate.js",
+  "main": "build/lib/rate.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "example": "ts-node ./src/example.ts"
+    "example1": "ts-node ./src/examplewithcallback.ts",
+    "example2": "ts-node ./src/examplewithpromises.ts",
+    "preversion": "npm run test"
   },
   "author": "pablo.aragon22@gmail.com",
   "license": "ISC",

@@ -45,7 +45,7 @@ describe('Test rate limit with promises', () => {
         expect(t2 - t1).toBeLessThan(A_SECOND);
         expect(t3 - t2).toBeLessThan(A_SECOND);
         expect(t4 - t3).toBeLessThan(A_SECOND);
-        expect(t5 - t4).toBeGreaterThan(A_SECOND);
+        expect(t5 - t4).toBeGreaterThanOrEqual(A_SECOND);
     });
     test('half over the limit', async () => {
         const perSecond = 3;
@@ -69,7 +69,7 @@ describe('Test rate limit with promises', () => {
         expect(t1 - t0).toBeLessThan(A_SECOND);
         expect(t2 - t1).toBeLessThan(A_SECOND);
         expect(t3 - t2).toBeLessThan(A_SECOND);
-        expect(t4 - t3).toBeGreaterThan(A_SECOND);
+        expect(t4 - t3).toBeGreaterThanOrEqual(A_SECOND);
         expect(t5 - t4).toBeLessThan(A_SECOND);
         expect(t6 - t5).toBeLessThan(A_SECOND);
     });
@@ -101,10 +101,10 @@ describe('Test rate limit with promises', () => {
         expect(t1 - t0).toBeLessThan(A_SECOND);
         expect(t2 - t1).toBeLessThan(A_SECOND);
         expect(t3 - t2).toBeLessThan(A_SECOND);
-        expect(t4 - t3).toBeGreaterThan(A_SECOND);
+        expect(t4 - t3).toBeGreaterThanOrEqual(A_SECOND);
         expect(t5 - t4).toBeLessThan(A_SECOND);
         expect(t6 - t5).toBeLessThan(A_SECOND);
-        expect(t7 - t6).toBeGreaterThan(A_SECOND);
+        expect(t7 - t6).toBeGreaterThanOrEqual(A_SECOND);
         expect(t8 - t7).toBeLessThan(A_SECOND);
         expect(t9 - t8).toBeLessThan(A_SECOND);
     });
