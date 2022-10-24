@@ -5,7 +5,7 @@ this package allows to limit the speed with which a function is called.
 ## Installation
 
 ```
-npm install ratelimitfn
+npm install ratelimit-fn
 ```
 
 ## Usage 
