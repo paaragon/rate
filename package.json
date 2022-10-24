@@ -1,6 +1,6 @@
 {
   "name": "ratelimit-fn",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Rate limiter for NodeJs. It allows yo to limit the rate of executions of any function in Javascript",
   "main": "lib/rate.js",
   "scripts": {
