@@ -2,7 +2,7 @@
   "name": "ratelimit",
   "version": "1.0.0",
   "description": "Rate limiter for NodeJs. It allows yo to limit the rate of executions of any function in Javascript",
-  "main": "main.js",
+  "main": "lib/rate.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
