@@ -1,4 +1,4 @@
-# RateLimit Fn
+# RateLimitFn
 
 this package allows to limit the speed with which a function is called.
 
