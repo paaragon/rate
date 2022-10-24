@@ -8,7 +8,8 @@
     "test": "jest",
     "example1": "ts-node ./src/examplewithcallback.ts",
     "example2": "ts-node ./src/examplewithpromises.ts",
-    "preversion": "npm run test"
+    "preversion": "npm run test",
+    "postversion": "git push && git push --tags"
   },
   "author": "pablo.aragon22@gmail.com",
   "license": "ISC",
